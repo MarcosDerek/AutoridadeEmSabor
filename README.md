@@ -1,5 +1,5 @@
 # AutoridadeEmSabor
-![alt text](https://pixl.is/image/znaZr3)
+![Banner.png](https://i.pixl.is/Banner.png)
 
 This project is the final test of the semester.
 
