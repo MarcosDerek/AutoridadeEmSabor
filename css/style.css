@@ -105,8 +105,9 @@ a:focus {
   width: 100%;
   height: 100vh;
   background-color: #161616;
-  animation: fade 0s ease-out 5s;
+  animation: fade 1s;
   animation-fill-mode: forwards;
+  animation-delay: 3s;
 }
 
 .imgLogo{
@@ -116,10 +117,10 @@ a:focus {
   width: 200px;
   transform: translate(-50%, -50%);
   opacity: 100%;
-  animation: intro 5s;
-}
+  animation: introStarts 3s;
+} 
 
-@keyframes intro{
+@keyframes introStarts{
   from{
     opacity: 0;
     left: 0;
@@ -131,11 +132,36 @@ a:focus {
 
   to{
     opacity: 100%;
+    visibility: hidden;
+  }
+}
+
+@keyframes introEnds{
+  from{
+    opacity: 100;
+    left: 50%;
+  }
+
+  20%{
+    left: 100%;
+  }
+
+  to{
+    opacity: 0%;
+    visibility: hidden;
   }
 }
 
 @keyframes fade {
-  to{
+  0%{
+    opacity: 100%;
+  }
+
+  50%{
+    opacity: 50%;
+  }
+
+  100%{
     opacity: 0%;
     visibility: hidden;
   }
